@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/schema/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.react.reactbackend.db.BoardMapper">
+    <select id="getBoardList" resultType="com.my.react.reactbackend.board.entity.BoardEntity">
+        SELECT  BRD_SN
+                , TITLE
+                , CONTENTS
+                , REG_NM
+                , REG_DT
+        FROM    TB_BOARD
+    </select>
+</mapper>
